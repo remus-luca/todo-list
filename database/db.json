@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "title": "Finish Lego with something mall...",
+      "status": 3,
+      "id": 2
+    },
+    {
+      "title": "Schedule car for revision",
+      "status": 1,
+      "id": 3
+    },
+    {
+      "title": "Update payment details for Netflix subscription",
+      "status": 1,
+      "id": 4
+    },
+    {
+      "title": "Check with swimming instructor for Monday re-scheduling",
+      "status": 1,
+      "id": 5
+    },
+    {
+      "title": "Buy fish for dinner",
+      "status": 2,
+      "id": 6
+    },
+    {
+      "title": "Clean",
+      "status": 2,
+      "id": 7
+    },
+    {
+      "title": "Clean the carpet",
+      "status": 1,
+      "id": 8
+    },
+    {
+      "title": "Walk the dog",
+      "status": 3,
+      "id": 9
+    }
+  ]
+}

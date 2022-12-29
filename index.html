@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODOS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./server.js"></script>
+    <script src="./ui.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="card container-md">
+      <!-- <input type="file" id="file" accept=".png,.jpg,.jpeg" /> -->
+      <header class="d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <h1>TODOS</h1>
+          <button type="button" class="todo-add" id="todo-add">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              fill="#0d6efd"
+              class="bi bi-plus-circle"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <select class="form-select" id="status-filter">
+          <option value="0" selected>All</option>
+          <option value="1">Pending</option>
+          <option value="2">Done</option>
+          <option value="3">Postponed</option>
+        </select>
+      </header>
+
+      <form name="todo-form" class="d-none" id="todo-form">
+        <div class="todo-form-container mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="todo-name"
+            name="todo-name"
+            placeholder="Work, work, work...."
+          />
+          <select class="form-select" name="todo-status">
+            <option value="1">Pending</option>
+            <option value="2">Done</option>
+            <option value="3">Postponed</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-end mb-3">
+          <button
+            type="reset"
+            class="btn btn-sm btn-outline-danger"
+            id="todo-cancel"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-primary ms-1"
+            id="todo-save"
+            disabled
+          >
+            Save
+          </button>
+        </div>
+      </form>
+
+      <ul class="list-group" id="todo-container"></ul>
+    </div>
+  </body>
+</html>

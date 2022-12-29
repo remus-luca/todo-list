@@ -1,0 +1,40 @@
+.todo {
+  margin: 0;
+}
+
+.todo-add {
+  border: none;
+  background-color: #fff;
+}
+
+.todo-add svg {
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+
+.todo--pending {
+  color: #dc3545;
+}
+
+.todo--done {
+  color: #0d6efd;
+  text-decoration: line-through;
+}
+
+.todo--postponed {
+  color: #6c757d;
+}
+
+.todo-form-container {
+  display: flex;
+}
+
+.todo-form-container .form-select {
+  width: auto;
+  margin-left: 1rem;
+}
+
+#status-filter {
+  width: fit-content;
+}
